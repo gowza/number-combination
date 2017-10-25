@@ -1,0 +1,25 @@
+.number-selector {
+  border: 2px solid black;
+}
+
+.number-selector>div {
+  display: flex;
+}
+
+.number-selector>div>div {
+  cursor: pointer;
+  flex-grow: 1;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-selector>div>div.selected {
+  background-color: yellow;
+}
+
+.combinations-input {
+  width: 100%;
+}
