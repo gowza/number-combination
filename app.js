@@ -63,6 +63,7 @@ $(function() {
     var data = $(event.target).parent('div').find('p > input');
     data[0].select();
     document.execCommand('copy');
+    window.getSelection().removeAllRanges();
   });
 
   // Prevent editing input elements used to display combinations.
