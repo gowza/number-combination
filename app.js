@@ -37,6 +37,20 @@ function selectNumber(selectionElm) {
   selectedNumbers = selectedNumbers.sort();
 }
 
+function displayClipboardMessage() {
+  var modal = $('.modal');
+
+  modal.addClass('active');
+
+  setTimeout(function () {
+    modal.addClass('active-fade');
+
+    setTimeout(function () {
+      modal.removeClass('active active-fade');
+    }, 300)
+  }, 500);
+}
+
 $(function() {
   var numberSelections = $('.number-selector > div > div');
   var combinationsInputs = $('.combinations-input');
@@ -62,9 +76,12 @@ $(function() {
 
   copyButtons.click(function(event) {
     var data = $(event.target).parent('div').find('p > input');
+
     data[0].select();
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
+
+    displayClipboardMessage();
   });
 
   // Prevent editing input elements used to display combinations.
