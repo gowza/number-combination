@@ -41,12 +41,13 @@ $(function() {
   var numberSelections = $('.number-selector > div > div');
   var combinationsInputs = $('.combinations-input');
   var copyButtons = $('.copy-button');
-  var twos = document.getElementById('twos');
-  var threes = document.getElementById('threes');
-  var twosButton = $('#twos-button');
-  var threesButton = $('#threes-button');
 
   numberSelections.click(function(event) {
+    var twos = document.getElementById('twos');
+    var threes = document.getElementById('threes');
+    var twosButton = $('#twos-button');
+    var threesButton = $('#threes-button');
+
     event.preventDefault();
 
     selectNumber(event.target);

@@ -9,8 +9,11 @@
 </head>
 
 <body>
-<div>
-  <h4>Select Number</h4>
+<div class="container">
+  <div class="main-text">
+    เลือกตัวเลขที่จะวิน
+  </div>
+
   <div class="number-selector">
     <div>
       <div>0</div>
@@ -27,22 +30,22 @@
       <div>9</div>
     </div>
   </div>
-</div>
 
-<div>
-  <h4>Twos</h4>
-  <p>
-    <input type="text" id="twos" class="combinations-input" readonly/>
-  </p>
-  <button class="copy-button" id="twos-button" disabled>Copy</button>
-</div>
+  <div class="combinations-display">
+    <h4>เลข 2 ตัว</h4>
+    <p>
+      <input type="text" id="twos" class="combinations-input" readonly/>
+    </p>
+    <button class="copy-button" id="twos-button" disabled>คัดลอก</button>
+  </div>
 
-<div>
-  <h4>Threes</h4>
-  <p>
-    <input type="text" id="threes" class="combinations-input" readonly/>
-  </p>
-  <button class="copy-button" id="threes-button" disabled>Copy</button>
+  <div class="combinations-display">
+    <h4>เลข 3 ตัว</h4>
+    <p>
+      <input type="text" id="threes" class="combinations-input" readonly/>
+    </p>
+    <button class="copy-button" id="threes-button" disabled>คัดลอก</button>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
